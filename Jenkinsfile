@@ -7,8 +7,7 @@ git branch: 'development', credentialsId: '9e634e68-a74d-4757-8db5-6a635db60e96'
 stage('Build')
 {
 sh "${mavenHome}/bin/mvn clean package"    
-} 
-/*    
+}   
 stage('sonarqube report'){
     sh "${mavenHome}/bin/mvn clean sonar:sonar"
 }
@@ -26,5 +25,4 @@ Regards,
 Prashanthi.
 8790575072.''', subject: 'Build over..', to: 'prashanthirajulagidi@gmail.com'    
 }
-*/
 }
